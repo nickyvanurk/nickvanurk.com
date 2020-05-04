@@ -1,0 +1,136 @@
+body {
+  font-family: "Source Serif Pro", serif;
+  margin: 0;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+a {
+  color: #3c3c3c;
+}
+
+a:hover {
+  color: #888;
+}
+
+/*********/
+/* LISTS */
+/*********/
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 1.25em 3em 0 0;
+  padding: 0 0 0 1.375em;
+  overflow: hidden;
+}
+li > ul,
+li > ol {
+  margin: 0.25em 0 0.25em 0;
+}
+
+ul > li,
+ol > li {
+  position: relative;
+  margin: 0;
+}
+
+ul > li::before,
+ol > li::before {
+  position: absolute;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 64.9ch) {
+  ul,
+  ol {
+    padding: 0 0 0 1.75em;
+  }
+}
+
+ul > li::before {
+  color: #888;
+  font-size: 0.875em;
+  top: 0.125em;
+  left: -1.375em;
+}
+
+ul > li::before,
+ul ul ul > li::before {
+  content: "\2727";
+}
+ul ul > li::before,
+ul ul ul ul > li::before {
+  content: "\2726";
+}
+
+
+/**************/
+/* PARAGRAPHS */
+/**************/
+
+p {
+  margin: 0;
+}
+p + p {
+  text-indent: 2.5em;
+}
+@media only screen and (max-width: 64.9ch) {
+  p + p {
+    text-indent: 1em;
+  }
+}
+
+.container {
+  max-width: 48em;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding-bottom: 4em;
+  position: relative;
+  text-align: justify;
+}
+
+.container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: calc(0.75em + 15px);
+  height: 1px;
+  border-bottom: 1px dotted #000;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.container::after {
+  content: "";
+  background-color: #fff;
+  background-image: url('/img/logo.png');
+  display: block;
+  position: absolute;
+  bottom: 0.75em;
+  width: 22px;
+  height: 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0 10px 0 11px;
+  z-index: 1;
+}
+
+nav {
+  text-align: right
+}
+nav {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 0.5em;
+}
