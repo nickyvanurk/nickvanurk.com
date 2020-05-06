@@ -1,112 +1,51 @@
-@charset "UTF-8";
-
-/* Font overview: loads Source Serif Pro for body
-
-/********************/
-/* SOURCE SERIF PRO */
-/********************/
-/* workhorse font for the body */
-
-/*@font-face {
-    font-family: "Source Serif Pro";
-    font-weight: 200;
-    font-style: normal;
-    src: url('../fonts/SourceSerifPro-BASIC-ExtraLight.ttf') format('truetype');
-    unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-      for body text, display as soon as possible (presumably as system font Baskerville)
-        and re-render with Source Serif Pro whenever it downloads:
-        https://developers.google.com/web/updates/2016/02/font-display
-        https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
-        https://caniuse.com/#search=font-display
-        
-    font-display: swap;
-}*/
-/*@font-face {
-    font-family: "Source Serif Pro";
-    font-weight: 200;
-    font-style: italic;
-    src: url('../fonts/SourceSerifPro-BASIC-ExtraLightItalic.ttf') format('truetype');
-    unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Source Serif Pro";
-    font-weight: 300;
-    font-style: normal;
-    src: url('../fonts/SourceSerifPro-BASIC-Light.ttf') format('truetype');
-    unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Source Serif Pro";
-    font-weight: 300;
-    font-style: italic;
-    src: url('../fonts/SourceSerifPro-BASIC-LightItalic.ttf') format('truetype');
-    unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-    font-display: swap;
-}*/
-@font-face {
-    font-family: "Source Serif Pro";
-    font-weight: 400;
-    font-style: normal;
-    src: url('../fonts/SourceSerifPro-BASIC-Regular.ttf') format('truetype');
-    unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-    font-display: swap;
-}
-/*@font-face {
-    font-family: "Source Serif Pro";
-    font-weight: 400;
-    font-style: italic;
-    src: url('../fonts/SourceSerifPro-BASIC-RegularItalic.ttf') format('truetype');
-    unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Source Serif Pro";
-    font-weight: 600;
-    font-style: normal;
-    src: url('../fonts/SourceSerifPro-BASIC-Semibold.ttf') format('truetype');
-    unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Source Serif Pro";
-    font-weight: 600;
-    font-style: italic;
-    src: url('../fonts/SourceSerifPro-BASIC-SemiboldItalic.ttf') format('truetype');
-    unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-    font-display: swap;
-}*/
-@font-face {
-    font-family: "Source Serif Pro";
-    font-weight: 700;
-    font-style: normal;
-    src: url('../fonts/SourceSerifPro-BASIC-Bold.ttf') format('truetype');
-    unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-    font-display: swap;
-}
-/*@font-face {
-    font-family: "Source Serif Pro";
-    font-weight: 700;
-    font-style: italic;
-    src: url('../fonts/SourceSerifPro-BASIC-BoldItalic.ttf') format('truetype');
-    unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Source Serif Pro";
+@font-face{
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/b683e3/00000000000000003b9b306c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3) format("woff2"),
+         url(https://use.typekit.net/af/b683e3/00000000000000003b9b306c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3) format("woff"),
+         url(https://use.typekit.net/af/b683e3/00000000000000003b9b306c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3) format("opentype");
     font-weight: 900;
     font-style: normal;
-    src: url('../fonts/SourceSerifPro-BASIC-Black.ttf') format('truetype');
-    unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-    font-display: swap;
 }
-@font-face {
-    font-family: "Source Serif Pro";
+
+@font-face{
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/d32834/00000000000000003b9b306d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3) format("woff2"),
+         url(https://use.typekit.net/af/d32834/00000000000000003b9b306d/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3) format("woff"),
+         url(https://use.typekit.net/af/d32834/00000000000000003b9b306d/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3) format("opentype");
     font-weight: 900;
     font-style: italic;
-    src: url('../fonts/SourceSerifPro-BASIC-BlackItalic.ttf') format('truetype');
-    unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-    font-display: swap;
 }
-*/
+
+@font-face{
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),
+         url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),
+         url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");
+    font-weight:700;font-style:normal;}
+
+@font-face{
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),
+         url(https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),
+         url(https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),
+         url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),
+         url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),
+         url(https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),
+         url(https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
