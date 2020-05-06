@@ -1,9 +1,22 @@
 <template>
-  <div class="container">
+  <div>
     <nav>
-      <a href="/"><font-awesome-icon :icon="['fas', 'home']"/></a>
-      <a href="/contact"><font-awesome-icon :icon="['far', 'envelope']"/></a>
+      <div class="container">
+        <a href="/"><font-awesome-icon :icon="['fas', 'home']"/></a>
+        <a href="/contact"><font-awesome-icon :icon="['far', 'envelope']"/></a>
+      </div>
     </nav>
-    <nuxt/>
+
+    <div class="section">
+      <div class="container">
+        <nuxt/>
+      </div>
+    </div>
+
+    <div class="section section-alt">
+      <div class="container">
+        <p class="copyright">©2020 Nicky van Urk. All Rights Reserved.</p>
+      </div>
+    </div>
   </div>
 </template>
