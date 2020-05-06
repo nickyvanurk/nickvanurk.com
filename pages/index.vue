@@ -9,6 +9,22 @@
 
     <div class="card-grid">
       <div class="card">
+        <a href="https://github.com/nickyvanurk/3d-multiplayer-browser-shooter" target="_blank">
+          <div class="card-header">
+              <div class="card-icon">
+                  <i class="la la-gamepad"></i>
+              </div>
+
+              <h3>3D Multiplayer Game</h3>
+          </div>
+
+          <p>A 3D multiplayer space dogfight game made with three.js,
+          express and ws. Complete with score and chat
+          functionality.</p>
+        </a>
+    </div>
+
+      <div class="card">
         <div class="card-header">
             <div class="card-icon">
                 <i class="la la-school"></i>
@@ -54,6 +70,14 @@
     padding: 2.5rem;
     border-radius: 3px;
     background: rgb(15, 14, 23);
+  }
+
+  .card > a {
+    color: inherit;
+  }
+
+  .card > a:hover {
+    text-decoration: inherit;
   }
 
   .card-header {
