@@ -3,6 +3,7 @@
   * <a href="https://www.goodreads.com/book/show/8706.The_Hitchhiker_s_Guide_to_the_Galaxy" target="_blank">The Hitchhiker's Guide to the Galaxy</a><sub> - Douglas Adams, 9780330491198</sub>
   * <a href="https://www.goodreads.com/book/show/18144590-the-alchemist" target="_blank">The Alchemist</a><sub> - Paulo Coelho, 9780062315007</sub>
   * <a href="https://www.goodreads.com/book/show/45280024-the-pragmatic-programmer" target="_blank">The Pragmatic Programmer</a><sub> - Andrew Hunt & David Hurst Thomas, 9780135957059</sub>
+  * <a href="https://www.goodreads.com/book/show/17255186-the-phoenix-project" target="_blank">The Phoenix Project</a><sub> - Gene Kim & Kevin Behr & George Spafford, 9780988262591</sub>
 
   ### 2018
   * <a href="https://www.goodreads.com/book/show/4653443-think-and-grow-rich-deluxe-edition" target="_blank">Think and Grow Rich</a><sub> - Napoleon Hill, 9781585426591</sub>
