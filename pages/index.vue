@@ -1,9 +1,8 @@
 <template>
   <div>
     <div class="section-header">
-      <h1>Hello, friend..</h1>
-      <p>This is the website of <strong>Nicky van Urk</strong>,
-      programmer & tech enthusiast. Currently studying for my
+      <p>Hi there 👋 My name is <strong>Nicky van Urk</strong>,
+      programmer & tech enthusiast. I'm currently studying for my
       bachelor's degree in Computer Science.</p>
     </div>
 
