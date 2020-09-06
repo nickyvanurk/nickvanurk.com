@@ -13,6 +13,10 @@
       </header>
 
       <Nuxt />
+
+      <footer class="site-footer">
+        <div class="copyright">© 2020 Nicky van Urk. All rights reserved.</div>
+      </footer>
     </div>
   </div>
 </template>
@@ -130,5 +134,18 @@ a:hover {
 .menu-item {
   font-weight: bold;
   margin: 0 1.5rem;
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 0 4.5rem;
+}
+
+.copyright {
+  color: var(--secondary-text-color);
+  font-size: 1.2rem;
+  letter-spacing: -0.02rem;
 }
 </style>
