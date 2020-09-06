@@ -109,6 +109,14 @@ export default {
   }
 }
 
+@media (min-width: 992px) {
+  .post-feed {
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+  }
+}
+
 .feed {
   display: flex;
   align-items: center;
