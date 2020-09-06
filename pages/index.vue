@@ -135,7 +135,7 @@ export default {
 }
 
 .feed:hover .feed-icon {
-  transform: translateX(0.4rem);
+  transform: translateX(0.3rem);
 }
 
 .feed + .feed {
@@ -187,11 +187,6 @@ export default {
   right: 0;
   transform: translateX(2rem);
   transition: transform 0.2s var(--animation-base);
-}
-
-.feed-icon symbol {
-  height: 16px;
-  width: 16px;
 }
 
 .u-permalink {
