@@ -78,6 +78,18 @@ a:hover {
   opacity: 0.8;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--darker-gray-color);
+  font-family: var(--font-base);
+  line-height: 1.3;
+  margin: 0 0 1.5rem;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
