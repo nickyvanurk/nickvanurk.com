@@ -2,6 +2,10 @@
   <div class="container">
     <div class="site">
       <header class="site-header">
+        <a class="logo" href="/">
+          <img src="/images/logo.png" alt="logo" />
+        </a>
+
         <nav>
           <a href="/">Home</a>
           <a href="/blog">Blog</a>
@@ -75,6 +79,11 @@ html {
   display: flex;
   align-items: center;
   height: 80px;
+}
+
+.site-header .logo img {
+  width: 21px;
+  height: 21px;
 }
 
 .site-header nav {
