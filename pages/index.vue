@@ -1,136 +1,32 @@
 <template>
   <div>
-    <div class="section-header">
-      <p>Hi there 👋 My name is <strong>Nicky van Urk</strong>,
-      programmer & tech enthusiast. I'm currently studying for my
-      bachelor's degree in Computer Science.</p>
-    </div>
-
-    <div class="card-grid">
-      <div class="card">
-        <a href="https://github.com/nickyvanurk/3d-multiplayer-browser-shooter" target="_blank">
-          <div class="card-header">
-              <div class="card-icon">
-                  <i class="la la-gamepad"></i>
-              </div>
-
-              <h3>3D Multiplayer Game</h3>
+    <h1>Blog Posts</h1>
+    <ul>
+      <li v-for="article of articles" :key="article.slug">
+        <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+          <img :src="article.img" />
+          <div>
+            <h2>{{ article.title }}</h2>
+            <p>{{ article.description }}</p>
           </div>
-
-          <p>A 3D multiplayer space dogfight game made with three.js,
-          express and ws. Complete with score and chat
-          functionality.</p>
-        </a>
-    </div>
-
-      <div class="card">
-        <div class="card-header">
-            <div class="card-icon">
-                <i class="la la-school"></i>
-            </div>
-            <h3>Education</h3>
-        </div>
-
-        <p>
-          <a href="/education/books">Books I've read</a><br>
-          <a href="/education/courses">Courses I've followed</a><br>
-        </p>
-      </div>
-    </div>
+        </NuxtLink>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        title: 'Home'
-      }
-    },
-    head () {
-      return {
-        title: this.title,
-      }
-    }
-  }
+export default {
+  async asyncData({ $content, params }) {
+    const articles = await $content('articles', params.slug)
+      .only(['title', 'description', 'img', 'slug', 'author'])
+      .sortBy('createdAt', 'asc')
+      .fetch()
+
+    return { articles }
+  },
+  head() {
+    return { title: 'Home' }
+  },
+}
 </script>
-
-<style>
-  .card-grid {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-  }
-
-  .card {
-    padding: 2.5rem;
-    border-radius: 3px;
-    background: rgb(15, 14, 23);
-  }
-
-  .card > a {
-    color: inherit;
-  }
-
-  .card > a:hover {
-    text-decoration: inherit;
-  }
-
-  .card-header {
-    display: flex;
-    margin-bottom: 1rem;
-    padding-top: 0px;
-    align-items: center;
-  }
-
-  .card-icon {
-    width: 70px;
-    height: 70px;
-    margin-right: 1rem;
-    font-size: 70px;
-    line-height: 0;
-    background:#fffffe;
-    border-radius: 3px;
-  }
-
-  .card h3 {
-    color: #fffffe;
-    margin-bottom: 0px;
-  }
-
-  .card p {
-    color: #fffffe;
-  }
-
-  @media only screen and (max-width: 798px) {
-    .card-grid {
-      grid-template-columns: 1fr;
-      grid-column-gap: 1rem;
-      grid-row-gap: 1rem;
-    }
-  }
-
-  /* .section {
-    display: inline-block;
-    vertical-align: top;
-  }
-
-  .section h2 {
-    font-weight: bold;
-    position: relative;
-    font-size: 1.75em;
-    line-height: 1.25;
-    letter-spacing: -0.75px;
-    margin: 1.75em 0 0.375em 0;
-    overflow: hidden;
-    font-size: 1.5em;
-    line-height: 0.875;
-    box-shadow: none;
-    text-align: left;
-    font-feature-settings: "smcp";
-    padding: 0 1.375em 0 0;
-  } */
-</style>
