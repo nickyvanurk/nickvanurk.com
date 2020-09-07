@@ -7,6 +7,14 @@
           &amp; tech enthusiast. I'm currently studying for my bachelor's degree
           in Computer Science.
         </div>
+
+        <div class="cover-portfolio">
+          <a class="button">3D Multiplayer Browser Shooter</a>
+
+          <a class="button">Moshi Moshi</a>
+
+          <a class="button">3D Spatial Partitioning</a>
+        </div>
       </div>
     </div>
 
@@ -96,6 +104,29 @@ export default {
 
 .cover-description {
   font-size: 1.7rem;
+}
+
+.cover-portfolio {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.cover-portfolio .button {
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .cover-portfolio {
+    flex-direction: column;
+  }
+
+  .cover-portfolio .button {
+    margin: 0;
+  }
+
+  .cover-portfolio .button + .button {
+    margin-top: 1rem;
+  }
 }
 
 .site-content {

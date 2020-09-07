@@ -3,7 +3,7 @@
     <div class="site">
       <header class="site-header">
         <a class="logo" href="/">
-          <img src="/images/logo.png" alt="logo" />
+          <span class="logo-text">Nicky van Urk</span>
         </a>
 
         <nav>
@@ -133,9 +133,10 @@ h6 {
   height: var(--navbar-height);
 }
 
-.site-header .logo img {
-  width: 21px;
-  height: 21px;
+.logo-text {
+  color: var(--secondary-text-color);
+  font-size: 1.8rem;
+  font-weight: 800;
 }
 
 .site-header nav {
@@ -159,5 +160,33 @@ h6 {
   color: var(--secondary-text-color);
   font-size: 1.2rem;
   letter-spacing: -0.02rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--white-color);
+  border: 1px solid var(--light-gray-color);
+  border-radius: 3px;
+  color: var(--brand-color);
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  height: 3.6rem;
+  justify-content: center;
+  letter-spacing: 0.05rem;
+  outline: 0;
+  padding: 0 15px;
+  white-space: nowrap;
+}
+
+.button:hover {
+  border-color: var(--mid-gray-color);
+  opacity: 1;
+}
+
+.button-secondary {
+  color: var(--darker-gray-color);
 }
 </style>
