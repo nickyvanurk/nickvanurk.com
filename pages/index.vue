@@ -9,11 +9,14 @@
         </div>
 
         <div class="cover-portfolio">
-          <a class="button">3D Multiplayer Browser Shooter</a>
-
-          <a class="button">Moshi Moshi</a>
-
-          <a class="button">3D Spatial Partitioning</a>
+          <NuxtLink
+            v-for="project of projects"
+            :key="project.slug"
+            :to="{ name: 'portfolio-slug', params: { slug: project.slug } }"
+            class="button"
+          >
+            {{ project.title }}
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -62,13 +65,19 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
+    const projects = await $content('projects', params.slug)
+      .limit(3)
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'desc')
+      .fetch()
+
     const articles = await $content('articles', params.slug)
       .limit(5)
       .only(['title', 'description', 'img', 'slug', 'length', 'updatedAt'])
       .sortBy('createdAt', 'desc')
       .fetch()
 
-    return { articles }
+    return { projects, articles }
   },
   methods: {
     formatMonth(date) {
