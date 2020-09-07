@@ -140,8 +140,9 @@ h6 {
 }
 
 .site-header nav {
-  margin-left: auto;
-  margin-right: auto;
+  flex: 2;
+  justify-content: flex-end;
+  display: flex;
 }
 
 .menu-item {
