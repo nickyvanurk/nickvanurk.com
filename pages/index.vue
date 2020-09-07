@@ -21,6 +21,12 @@
       </div>
     </div>
 
+    <section class="featured-wrapper">
+      <h2 class="featured-title">Featured articles</h2>
+
+      <div class="featured-feed"></div>
+    </section>
+
     <div class="site-content">
       <div class="content-area">
         <main class="site-main">
@@ -136,6 +142,20 @@ export default {
   .cover-portfolio .button + .button {
     margin-top: 1rem;
   }
+}
+
+.featured-wrapper {
+  margin-top: 6rem;
+}
+
+.featured-title {
+  border-bottom: 1px solid var(--light-gray-color);
+  color: var(--brand-color);
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 4.5rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .site-content {
