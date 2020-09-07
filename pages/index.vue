@@ -24,7 +24,9 @@
     <section class="featured-wrapper">
       <h2 class="featured-title">Featured articles</h2>
 
-      <div class="featured-feed"></div>
+      <div class="featured-feed">
+        <FeaturedArticlesSlider :articles="articles" />
+      </div>
     </section>
 
     <div class="site-content">
