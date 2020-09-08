@@ -25,7 +25,7 @@
       <h2 class="featured-title">Featured articles</h2>
 
       <div class="featured-feed">
-        <FeaturedArticlesSlider :articles="articles" />
+        <Carousel :articles="articles" />
       </div>
     </section>
 

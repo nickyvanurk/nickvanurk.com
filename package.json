@@ -7,13 +7,15 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore --ignore-pattern 'vendor' .",
     "lint": "yarn lint:js"
   },
   "dependencies": {
     "@nuxt/content": "^1.8.1",
     "css.gg": "^2.0.0",
+    "jquery": "^3.5.1",
     "nuxt": "^2.14.0",
+    "owl.carousel": "^2.3.4",
     "prism-themes": "^1.4.0",
     "vue-slick-carousel": "^1.0.6"
   },

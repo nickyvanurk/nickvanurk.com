@@ -24,7 +24,31 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    __dangerouslyDisableSanitizersByTagID: {
+      owlcarousel: ['innerHTML'],
+    },
+    script: [
+      { src: 'vendor/jquery/jquery.min.js', body: true },
+      { src: 'vendor/owlcarousel/owl.carousel.min.js', body: true },
+      {
+        hid: 'owlcarousel',
+        innerHTML: `
+          $(document).ready(function() { $('.owl').owlCarousel(); });
+      `,
+        body: true,
+      },
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        red: 'stylesheet',
+        href: 'vendor/owlcarousel/assets/owl.carousel.min.css',
+      },
+      {
+        red: 'stylesheet',
+        href: 'vendor/owlcarousel/assets/owl.theme.default.css',
+      },
+    ],
   },
   /*
    ** Global CSS
@@ -35,6 +59,7 @@ export default {
    ** https://nuxtjs.org/guide/plugins
    */
   plugins: [{ src: './plugins/vue-slick-carousel.js' }],
+
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
