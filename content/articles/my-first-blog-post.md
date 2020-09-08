@@ -1,7 +1,7 @@
 ---
 title: My first blog post
 description: Learning how to use @nuxt/content to create a blog
-img: https://via.placeholder.com/280x140
+img: https://demo.iveel.co/dawn/content/images/size/w750/2020/07/photo-1516062423079-7ca13cdc7f5a.jpeg
 alt: my first blog post
 length: 1
 ---

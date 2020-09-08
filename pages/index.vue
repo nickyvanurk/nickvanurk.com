@@ -3,9 +3,9 @@
     <div class="cover">
       <div class="cover-content">
         <div class="cover-description">
-          Hi there 👋 My name is <strong>Nicky van Urk</strong>, programmer
-          &amp; tech enthusiast. I'm currently studying for my bachelor's degree
-          in Computer Science.
+          Hi there 👋 My name is <strong>Nicky van Urk</strong>, software
+          engineer &amp; tech enthusiast. I'm currently studying for my
+          bachelor's degree in Computer Science.
         </div>
 
         <div class="cover-portfolio">
@@ -25,7 +25,7 @@
       <h2 class="featured-title">Featured articles</h2>
 
       <div class="featured-feed">
-        <Carousel :articles="articles" />
+        <Carousel :items="articles" />
       </div>
     </section>
 

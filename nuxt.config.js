@@ -33,7 +33,24 @@ export default {
       {
         hid: 'owlcarousel',
         innerHTML: `
-          $(document).ready(function() { $('.owl').owlCarousel(); });
+          $(document).ready(function() {
+            $('.owl').owlCarousel({
+              margin: 30,
+              nav: true,
+              dots: false,
+              responsive: {
+                0: {
+                  items: 1
+                },
+                767: {
+                  items: 2
+                },
+                992: {
+                  items: 3
+                }
+              },
+            });
+          });
       `,
         body: true,
       },
@@ -41,11 +58,11 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
-        red: 'stylesheet',
+        rel: 'stylesheet',
         href: 'vendor/owlcarousel/assets/owl.carousel.min.css',
       },
       {
-        red: 'stylesheet',
+        rel: 'stylesheet',
         href: 'vendor/owlcarousel/assets/owl.theme.default.css',
       },
     ],
@@ -58,7 +75,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [{ src: './plugins/vue-slick-carousel.js' }],
+  plugins: [],
 
   /*
    ** Auto import components
