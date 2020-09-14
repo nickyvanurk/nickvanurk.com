@@ -58,6 +58,10 @@ $on-widescreen: 1152px;
   font-size: $base-font-size * $ratio;
 }
 
+@function vh($quantity) {
+  @return calc(var(--vh, 1vh) * #{$quantity});
+}
+
 // Import sass files
 @import "klise/fonts", "klise/base", "klise/layout", "klise/post",
   "klise/miscellaneous", "klise/syntax", "klise/dark";

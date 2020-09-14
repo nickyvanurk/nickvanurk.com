@@ -161,4 +161,12 @@
   <meta name="theme-color" content="#2c2c2c" />
 
   <link rel="stylesheet" href="/assets/css/style.css" />
+  
+  <script>
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight/100}px`);
+
+    window.addEventListener('resize', () => {
+      document.documentElement.style.setProperty('--vh', `${window.innerHeight/100}px`);
+    });
+  </script>
 </head>
