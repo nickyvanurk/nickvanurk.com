@@ -289,6 +289,7 @@ blockquote {
     max-width: calc(#{$narrow-size} - (#{$spacing-full}));
     padding-right: $spacing-full - 10;
     padding-left: $spacing-full - 10;
+    margin-bottom: 8.5rem;
 
     &.blurry {
       animation: 0.2s ease-in forwards blur;
