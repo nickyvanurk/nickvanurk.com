@@ -29,9 +29,9 @@ window.onresize = () => {
 }
 
 
-const images = document.querySelectorAll('img');
-for (let image of images) {
-    image.addEventListener("load", function() {
-        this.parentNode.style.opacity = '1';
-    });
-}
+// const images = document.querySelectorAll('img');
+// for (let image of images) {
+//     image.addEventListener("load", function() {
+//         this.parentNode.style.opacity = '1';
+//     });
+// }
