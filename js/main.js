@@ -27,3 +27,11 @@ window.onresize = () => {
     ninja.idle.x = app.renderer.width/4
     ninja.idle.y = app.renderer.height
 }
+
+
+const images = document.querySelectorAll('img');
+for (let image of images) {
+    image.addEventListener("load", function() {
+        this.parentNode.style.opacity = '1';
+    });
+}
