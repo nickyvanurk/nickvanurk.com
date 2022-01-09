@@ -9,3 +9,84 @@
     width: 60px;
     image-rendering: pixelated;
 }
+
+.card-grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.card {
+    padding: 2.5rem;
+    border-radius: 3px;
+    background: #0f0e17;
+}
+
+.card > a:hover {
+    text-decoration: inherit;
+}
+
+.card-header {
+    display: flex;
+    margin-bottom: 1rem;
+    padding-top: 0;
+    align-items: center;
+}
+
+.card-icon {
+    width: 70px;
+    height: 70px;
+    margin-right: 1rem;
+    font-size: 70px;
+    line-height: 0;
+    background: #fffffe;
+    border-radius: 3px;
+    color: #0f0e17;
+}
+
+.card h3 {
+    margin-bottom: 0;
+}
+
+.card h3,.card p {
+    color: #fffffe;
+}
+
+.card-tag-title {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: #fffffe;
+    font-weight: 700;
+}
+
+.card-tag {
+    display: inline-block;
+    margin-right: 0.6rem;
+    margin-bottom: 0.6rem;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    background: #e53170;
+    color: #fffffe;
+
+    position: relative;
+    top: 0;
+    transition: top ease 0.2s;
+}
+
+.card-tag:hover {
+    color: #fffffe;
+    top: -3px;
+}
+
+@media only screen and (max-width: 798px){
+    .card-grid {
+        grid-template-columns: 1fr;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+}
