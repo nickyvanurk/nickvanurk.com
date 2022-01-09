@@ -1,3 +1,7 @@
+.no-pointer {
+    pointer-events: none;
+}
+
 #logo {
     position: relative;
     height: 60px;
@@ -20,10 +24,38 @@
 }
 
 .card {
+    position: relative;
     padding: 2.5rem;
     border-radius: 3px;
     background: #0f0e17;
 }
+
+.card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0f0e17;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+.card-overlay:hover {
+    opacity: 0.3;
+}
+
+.card:nth-child(1) {
+    background: url('/img/projects/void.png');
+    background-size: cover;
+    background-position: center;
+}
+
 
 .card > a:hover {
     text-decoration: inherit;
@@ -62,10 +94,13 @@
     font-weight: 700;
 }
 
+.card-tags {
+    float: left;
+}
+
 .card-tag {
     display: inline-block;
     margin-right: 0.6rem;
-    margin-bottom: 0.6rem;
     padding: 5px 10px;
     border-radius: 3px;
     font-size: 14px;
@@ -81,6 +116,10 @@
 .card-tag:hover {
     color: #fffffe;
     top: -3px;
+}
+
+.card-tag:last-child {
+    margin-right: 0;
 }
 
 @media only screen and (max-width: 798px){
