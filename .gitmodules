@@ -1,0 +1,3 @@
+[submodule "themes/excalibur"]
+	path = themes/excalibur
+	url = git@github.com:nickyvanurk/hugo-excalibur.git

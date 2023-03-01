@@ -1,0 +1,41 @@
+baseURL = 'https://nickvanurk.com'
+languageCode = 'en-us'
+title = 'N. van Urk'
+theme = 'excalibur'
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
