@@ -26,6 +26,7 @@ You can report any broken links on this website [here](https://github.com/nickyv
   * <a href="https://www.goodreads.com/book/show/54438214-14-habits-of-highly-productive-developers" target="_blank">14 Habits of Highly Productive Developers</a><sub> - Zeno Rocha</sub>
   * <a href="https://www.goodreads.com/book/show/97412.On_the_Shortness_of_Life" target="_blank">On the Shortness of Life</a><sub> - Seneca</sub>
   * <a href="https://www.goodreads.com/book/show/29348373-on-the-happy-life" target="_blank">On the Happy Life</a><sub> - Seneca</sub>
+  * <a href="https://www.goodreads.com/book/show/8298080-self-culture-through-the-vocation" target="_blank">Self-Culture Through the Vocation</a><sub> - Edward Howard Griggs</sub>
 
 ##### 2018
   * <a href="https://www.goodreads.com/book/show/4653443-think-and-grow-rich-deluxe-edition" target="_blank">Think and Grow Rich</a><sub> - Napoleon Hill</sub>
