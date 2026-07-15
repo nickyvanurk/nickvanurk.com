@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nick van Urk — 3D Web Engineer</title>
+  <meta name="description" content="Nick van Urk is a 3D web engineer building real-time Three.js and WebGL experiences in the browser — games, geospatial tools and digital twins." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nick van Urk — 3D Web Engineer" />
+  <meta property="og:description" content="Real-time 3D in the browser: renderers, physics, netcode and frame budgets." />
+  <meta property="og:image" content="assets/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#professional">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="Nick van Urk — home">
+      <span class="wordmark__mono">NVU</span>
+      <span class="wordmark__full">NICK&nbsp;VAN&nbsp;URK</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#professional">Professional</a>
+      <a href="#work">Games</a>
+      <a href="#graphics">Graphics</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <span class="status"><span class="status__dot" aria-hidden="true"></span>Open to work</span>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="hero__eyebrow">Netherlands &middot; Real-time 3D &middot; ~8 years in the browser</p>
+      <h1 class="hero__title" id="hero-title">
+        <span class="hero__line">3D&nbsp;WEB</span>
+        <span class="hero__line hero__line--accent">ENGINEER<span class="dot">.</span></span>
+      </h1>
+      <div class="hero__meta">
+        <p class="hero__name">Nick&nbsp;van&nbsp;Urk</p>
+        <p class="hero__lede">
+          I build interactive 3D applications for the web—from geospatial visualization and
+          digital twins to CAD viewers and multiplayer games. I specialize in performance and
+          scalability—keeping things fast and responsive, even with large scenes and real-time data.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ STACK MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>TypeScript</span><span>&bull;</span><span>JavaScript</span><span>&bull;</span><span>Three.js</span><span>&bull;</span><span>WebGL</span><span>&bull;</span><span>GLSL</span><span>&bull;</span><span>Rapier</span><span>&bull;</span><span>PhysX</span><span>&bull;</span><span>WebSockets</span><span>&bull;</span><span>Node</span><span>&bull;</span><span>Deno</span><span>&bull;</span><span>Vite</span><span>&bull;</span><span>SQLite</span><span>&bull;</span><span>OpenLayers</span><span>&bull;</span><span>Godot</span><span>&bull;</span><span>Python</span><span>&bull;</span><span>C++</span><span>&bull;</span>
+        <span>TypeScript</span><span>&bull;</span><span>JavaScript</span><span>&bull;</span><span>Three.js</span><span>&bull;</span><span>WebGL</span><span>&bull;</span><span>GLSL</span><span>&bull;</span><span>Rapier</span><span>&bull;</span><span>PhysX</span><span>&bull;</span><span>WebSockets</span><span>&bull;</span><span>Node</span><span>&bull;</span><span>Deno</span><span>&bull;</span><span>Vite</span><span>&bull;</span><span>SQLite</span><span>&bull;</span><span>OpenLayers</span><span>&bull;</span><span>Godot</span><span>&bull;</span><span>Python</span><span>&bull;</span><span>C++</span><span>&bull;</span>
+      </div>
+    </div>
+
+    <!-- ============ APPLIED / PROFESSIONAL ============ -->
+    <section class="section" id="professional" aria-labelledby="professional-h">
+      <div class="section__head">
+        <span class="section__num" aria-hidden="true">01</span>
+        <h2 class="section__title" id="professional-h">Professional</h2>
+        <p class="section__note">Engineering for industry — game engines, geospatial tools and digital twins.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="panel">
+          <div class="panel__top">
+            <svg class="panel__glyph" viewBox="0 0 100 100" aria-hidden="true"><circle cx="30" cy="34" r="9"/><circle cx="72" cy="30" r="7"/><circle cx="58" cy="72" r="8"/><path d="M30 34 L72 30 M72 30 L58 72 M58 72 L30 34"/></svg>
+            <span class="panel__place">Dubai, UAE &middot; remote &middot; 2025&ndash;26</span>
+          </div>
+          <h3 class="panel__title">SPARQ Worlds</h3>
+          <p class="panel__role">Physics &amp; multiplayer netcode</p>
+          <p class="panel__desc">
+            Core systems on a C++ game engine. Built the physics stack on PhysX — rigid bodies, raycasting,
+            vehicle &amp; character controllers — and the multiplayer netcode: server-authoritative replication,
+            client prediction &amp; rollback, entity interpolation, and an adaptive input buffer that keeps
+            the server fed with client inputs under varying network conditions.
+          </p>
+          <ul class="tags"><li>C++</li><li>PhysX</li><li>Netcode</li><li>ECS</li></ul>
+        </article>
+
+        <article class="panel">
+          <div class="panel__top">
+            <svg class="panel__glyph" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 14 L86 34 V66 L50 86 L14 66 V34 Z" fill="none"/><path d="M50 14 V50 L86 34 M50 50 L14 34 M50 50 V86"/></svg>
+            <span class="panel__place">Vancouver, CA &middot; remote &middot; 2024&ndash;25</span>
+          </div>
+          <h3 class="panel__title">Mod&nbsp;Studio</h3>
+          <p class="panel__role">2D &rarr; 3D engine conversion</p>
+          <p class="panel__desc">
+            Took Moddio — a browser-based multiplayer game engine — from 2D to full 3D. Started with a
+            Three.js rendering layer, then worked down into the engine internals and swapped its physics
+            core out for Rapier. Once the 3D foundation shipped, I moved to hardening it — bug-fixing and
+            improving performance.
+          </p>
+          <ul class="tags"><li>TypeScript</li><li>Three.js</li><li>WebGL</li><li>Rapier</li></ul>
+        </article>
+
+        <article class="panel">
+          <div class="panel__top">
+            <svg class="panel__glyph" viewBox="0 0 100 100" aria-hidden="true"><path d="M8 78 L50 20 L92 78 Z" fill="none"/><path d="M22 78 L50 40 L78 78" fill="none"/><circle cx="50" cy="20" r="4"/></svg>
+            <span class="panel__place">Rotterdam, NL &middot; 2023</span>
+          </div>
+          <h3 class="panel__title">Sweco</h3>
+          <p class="panel__role">3D geospatial visualization</p>
+          <p class="panel__desc">
+            Browser software that lets municipalities explore their outdoor-space and terrain data in
+            3D — building footprints, roads, water and dunes placed at their real-world heights in a
+            Three.js scene, over an OpenLayers map. Dutch RD coordinates are reprojected with proj4,
+            and clicking any object shows what it is.
+          </p>
+          <ul class="tags"><li>TypeScript</li><li>Three.js</li><li>OpenLayers</li><li>proj4</li><li>GIS</li></ul>
+          <p class="links">
+            <a href="https://nickvanurk.com/prototype/" target="_blank" rel="noopener">Demo&nbsp;&rarr;</a>
+          </p>
+        </article>
+
+        <article class="panel">
+          <div class="panel__top">
+            <svg class="panel__glyph" viewBox="0 0 100 100" aria-hidden="true"><rect x="24" y="46" width="30" height="30"/><path d="M54 60 H80 M80 60 V30 M80 30 H66"/><circle cx="66" cy="30" r="5"/></svg>
+            <span class="panel__place">Drachten, NL &middot; 2021&ndash;22</span>
+          </div>
+          <h3 class="panel__title">Philips</h3>
+          <p class="panel__role">Robotics digital twin</p>
+          <p class="panel__desc">
+            A Godot 3D digital twin for tabletop industrial robots, synced bidirectionally with the real
+            hardware over a Python TCP server. Engineers build and run motion programs through a visual,
+            node-based interface — sequencing moves and setting arm positions in real-world units — so
+            operating the robot needs no specialist training.
+          </p>
+          <ul class="tags"><li>Godot</li><li>Python</li><li>Digital&nbsp;Twin</li><li>Robotics</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ GAMES ============ -->
+    <section class="section" id="work" aria-labelledby="games-h">
+      <div class="section__head">
+        <span class="section__num" aria-hidden="true">02</span>
+        <h2 class="section__title" id="games-h">Games</h2>
+        <p class="section__note">Shipped &amp; in-progress real-time multiplayer titles running in the browser — all built solo.</p>
+      </div>
+
+      <div class="grid grid--3 games-grid">
+      <!-- Featured: Mechacraft -->
+      <article class="feature">
+        <a class="feature__media" href="https://mechacraft.io" target="_blank" rel="noopener">
+          <img src="assets/mechacraft-cover.jpg" alt="Mechacraft cover: a machine built from blocks and wheels driving through a 3D physics world." loading="lazy" width="800" height="1200" />
+          <span class="badge badge--live">Live on CrazyGames</span>
+        </a>
+        <div class="feature__body">
+          <p class="kicker">Featured project</p>
+          <h3 class="feature__title">Mechacraft</h3>
+          <p class="feature__desc">
+            A browser-based machine-building sandbox inspired by Scrap Mechanic. Snap parts together into
+            vehicles and machines, then drive them through a real physics simulation.
+          </p>
+          <p class="feature__desc">
+            The engineering is mostly in the physics — custom raycast vehicles with suspension and
+            steering, plus buoyancy and aerodynamics so machines can float and fly. Rendering stays fast
+            on large builds through instancing and a BVH, and the whole thing runs in real-time
+            multiplayer. Built solo and shipped on CrazyGames.
+          </p>
+          <ul class="stats">
+            <li><b>~84k</b><span>lines of source</span></li>
+            <li><b>1,207</b><span>commits</span></li>
+            <li><b>Live</b><span>on CrazyGames</span></li>
+          </ul>
+          <ul class="tags">
+            <li>TypeScript</li><li>Three.js</li><li>Rapier</li><li>Vite</li><li>Deno</li><li>SQLite</li>
+          </ul>
+          <p class="links">
+            <a class="btn" href="https://mechacraft.io" target="_blank" rel="noopener">Play&nbsp;&rarr;</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- Three smaller -->
+        <article class="card">
+          <a class="card__media" href="https://nickvanurk.com/voidfall" target="_blank" rel="noopener">
+            <img src="assets/voidfall-shot.png" alt="Voidfall: a spacecraft chasing a target through an asteroid field with a HUD reticle." loading="lazy" width="800" height="1200" />
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">Voidfall</h3>
+            <p class="card__desc">
+              Six-axis flight on Rapier physics — crosshair-convergent guns, firing-lead indicators,
+              minable asteroid fields, an XP/vendor economy. The netcode is the point: a 60&nbsp;Hz sim
+              streamed as bit-packed, quantized 20&nbsp;Hz snapshots with per-viewer interest management,
+              a bandwidth-budgeted priority accumulator, and dead-reckoning plus error-smoothing that
+              keep remote ships fluid under latency.
+            </p>
+            <ul class="stats stats--sm">
+              <li><b>137&#9733;</b></li><li><b>~24k</b><span>LOC</span></li><li><b>563</b><span>commits</span></li>
+            </ul>
+            <ul class="tags"><li>TypeScript</li><li>Three.js</li><li>Rapier</li><li>WebSockets</li><li>Node</li></ul>
+            <p class="links">
+              <a href="https://nickvanurk.com/voidfall" target="_blank" rel="noopener">Play&nbsp;&rarr;</a>
+              <a href="https://github.com/nickyvanurk/voidfall" target="_blank" rel="noopener">Source</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card__media" href="https://everwilds.io" target="_blank" rel="noopener">
+            <img src="assets/everwilds-shot.jpg" alt="Everwilds: a character in a 3D world with nameplates and an MMORPG-style interface." loading="lazy" width="1320" height="1040" />
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">Everwilds</h3>
+            <p class="card__desc">
+              A WoW-style browser MMORPG built as a netcode reference: an authoritative 20&nbsp;Hz ECS
+              server replicates movement as input flags, and clients dead-reckon remote players forward,
+              error-correcting toward server truth. Distance-based interest management scopes each
+              client&#39;s updates to nearby entities — over combat, spells, leveling, threat-based AI,
+              nameplates and chat.
+            </p>
+            <ul class="stats stats--sm">
+              <li><b>89&#9733;</b></li><li><b>~47k</b><span>LOC</span></li><li><b>467</b><span>commits</span></li>
+            </ul>
+            <ul class="tags"><li>TypeScript</li><li>Deno</li><li>Three.js</li><li>WebSockets</li><li>ECS</li></ul>
+            <p class="links">
+              <a href="https://everwilds.io" target="_blank" rel="noopener">Play&nbsp;&rarr;</a>
+              <a href="https://github.com/nickyvanurk/everwilds" target="_blank" rel="noopener">Source</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card__media" href="https://nickvanurk.com/evergate/" target="_blank" rel="noopener">
+            <img src="assets/evergate-shot.png" alt="Evergate: a first-person view speed-running across jump platforms with a speed HUD." loading="lazy" width="1069" height="1481" />
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">Evergate</h3>
+            <p class="card__desc">
+              Quake-style strafe-jumping and bunny-hopping across hand-built obstacle courses, tracked
+              by a live speed HUD, run timers and checkpoint leaderboards. It rides on a from-scratch
+              netcode stack — client prediction, server-authoritative rollback reconciliation and an
+              adaptive jitter buffer — plus custom GJK/EPA collision and an in-browser level editor.
+            </p>
+            <ul class="stats stats--sm">
+              <li><b>Prototype</b></li>
+            </ul>
+            <ul class="tags"><li>TypeScript</li><li>Three.js</li><li>Deno</li><li>WebSockets</li><li>Hono</li></ul>
+            <p class="links">
+              <a href="https://nickvanurk.com/evergate/" target="_blank" rel="noopener">Play&nbsp;&rarr;</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ GRAPHICS & ALGORITHMS ============ -->
+    <section class="section" id="graphics" aria-labelledby="graphics-h">
+      <div class="section__head">
+        <span class="section__num" aria-hidden="true">03</span>
+        <h2 class="section__title" id="graphics-h">Graphics &amp; Algorithms</h2>
+        <p class="section__note">Research-paper implementations, live in WebGL.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="algo">
+          <span class="algo__idx" aria-hidden="true">/01</span>
+          <h3 class="algo__title">CDLOD Terrain</h3>
+          <p class="algo__desc">
+            Continuous distance-dependent level of detail: a frustum-culled quadtree picks patches each
+            frame and one instanced grid mesh morphs between LOD rings in the vertex shader — crisp
+            underfoot, cheap on the horizon, no popping. The terrain itself is analytic GLSL noise
+            (simplex fBm + ridged multifractal), so there&#39;s no heightmap to stream or alias against.
+          </p>
+          <ul class="tags"><li>Three.js</li><li>GLSL</li><li>Quadtree</li><li>Instancing</li></ul>
+          <p class="links">
+            <a href="https://nickvanurk.com/cdlod/" target="_blank" rel="noopener">Demo&nbsp;&rarr;</a>
+            <a href="https://github.com/nickyvanurk/cdlod" target="_blank" rel="noopener">Source</a>
+          </p>
+        </article>
+
+        <article class="algo">
+          <span class="algo__idx" aria-hidden="true">/02</span>
+          <h3 class="algo__title">Solid-Geometry Capping</h3>
+          <p class="algo__desc">
+            Clips a solid triangle mesh against a horizontal section plane, stitches the triangle-plane
+            intersection segments into closed contours, then ear-clips them to rebuild the cut face.
+            Three.js hardware clipping drives the live cutaway; a CPU retriangulation pass fills the cap —
+            the geometry behind section cuts in CAD and BIM viewers.
+          </p>
+          <ul class="tags"><li>Three.js</li><li>WebGL</li><li>TypeScript</li><li>Ear&nbsp;clipping</li></ul>
+          <p class="links">
+            <a href="https://nickvanurk.com/capping/" target="_blank" rel="noopener">Demo&nbsp;&rarr;</a>
+            <a href="https://github.com/nickyvanurk/capping" target="_blank" rel="noopener">Source</a>
+          </p>
+        </article>
+
+        <article class="algo">
+          <span class="algo__idx" aria-hidden="true">/03</span>
+          <h3 class="algo__title">Spatial Partitioning</h3>
+          <p class="algo__desc">
+            Keeping real-time simulations fast as they scale — rather than every agent testing every
+            other (O(n&sup2;)), an octree limits each neighbour query to nearby cells. Demonstrated with a
+            400-boid flocking sim, its octree cells drawn as a toggleable wireframe.
+          </p>
+          <ul class="tags"><li>Three.js</li><li>Octree</li><li>Boids</li><li>TypeScript</li></ul>
+          <p class="links">
+            <a href="https://nickvanurk.com/boids-octree-simulation/" target="_blank" rel="noopener">Demo&nbsp;&rarr;</a>
+            <a href="https://github.com/nickyvanurk/3d-spatial-partitioning" target="_blank" rel="noopener">Source</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--about" id="about" aria-labelledby="about-h">
+      <div class="section__head">
+        <span class="section__num" aria-hidden="true">04</span>
+        <h2 class="section__title" id="about-h">About</h2>
+      </div>
+
+      <div class="about">
+        <div class="about__bio">
+          <p class="about__lead">
+            I've spent the last eight years building interactive 3D software for the web, from
+            geospatial visualization and digital twins to multiplayer games and custom game engines.
+          </p>
+          <p>
+            I enjoy building the technology behind interactive 3D software—from rendering and geometry
+            processing to physics, networking, and spatial data visualization. Whether it's a CAD
+            viewer, digital twin, GIS application, multiplayer game, or game engine, my goal is the
+            same: software that stays fast, responsive, and scalable.
+          </p>
+          <h3 class="about__sub">Stack</h3>
+          <ul class="stackgrid">
+            <li>TypeScript</li><li>JavaScript</li><li>Three.js</li><li>WebGL</li><li>GLSL</li>
+            <li>Rapier</li><li>PhysX</li><li>WebSockets</li><li>Node</li><li>Deno</li>
+            <li>Vite</li><li>SQLite</li><li>OpenLayers</li><li>Godot</li><li>Python</li>
+            <li>C++</li>
+          </ul>
+        </div>
+
+        <div class="about__exp">
+          <h3 class="about__sub">Experience</h3>
+          <ol class="timeline">
+            <li><span class="timeline__yr">2025&ndash;26</span><span class="timeline__what"><b>Engine Programmer</b> — SPARQ Worlds<em>Dubai, UAE · remote</em></span></li>
+            <li><span class="timeline__yr">2024&ndash;25</span><span class="timeline__what"><b>Engine Programmer</b> — Mod Studio<em>Vancouver, CA · remote</em></span></li>
+            <li><span class="timeline__yr">2023</span><span class="timeline__what"><b>Software Engineer, Intern</b> — Sweco<em>Rotterdam, NL</em></span></li>
+            <li><span class="timeline__yr">2021&ndash;22</span><span class="timeline__what"><b>Software Engineer, Intern</b> — Philips<em>Drachten, NL</em></span></li>
+            <li><span class="timeline__yr">2019&ndash;21</span><span class="timeline__what"><b>Software Engineer</b> — Yobbers<em>Real-time chat platform; lifted the site's performance score 56 → 94.</em></span></li>
+            <li><span class="timeline__yr">2023</span><span class="timeline__what"><b>BSc Computer Science</b> — NHL Stenden University<em>Netherlands</em></span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact" aria-labelledby="contact-h">
+      <span class="section__num contact__num" aria-hidden="true">05</span>
+      <h2 class="contact__title" id="contact-h">Get in touch</h2>
+      <ul class="contact__links">
+        <li><a href="mailto:nickyvanurk@gmx.com">nickyvanurk@gmx.com</a></li>
+        <li><a href="https://github.com/nickyvanurk" target="_blank" rel="noopener">GitHub&nbsp;&rarr;</a></li>
+        <li><a href="https://www.linkedin.com/in/nickyvanurk" target="_blank" rel="noopener">LinkedIn&nbsp;&rarr;</a></li>
+        <li><a href="https://nickvanurk.com/resume.pdf" target="_blank" rel="noopener">Résumé&nbsp;(PDF)&nbsp;&rarr;</a></li>
+        <li><a href="https://discordapp.com/users/255700841296560129" target="_blank" rel="noopener">Discord: jycerian&nbsp;&rarr;</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>Nick van Urk</span>
+    <span>&copy; 2026</span>
+    <span>3D Web Engineer &middot; Netherlands</span>
+  </footer>
+</body>
+</html>
