@@ -3,6 +3,34 @@
    Off-black ground · bone type · one electric-magenta accent
    ============================================================ */
 
+/* Self-hosted latin subsets. Glyphs outside latin (→, ★) are absent from these
+   faces and fall through to the stack's next family, as they did on the CDN. */
+@font-face {
+  font-family: "Archivo Black";
+  font-style: normal; font-weight: 400; font-display: swap;
+  src: url("fonts/ArchivoBlack-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal; font-weight: 400; font-display: swap;
+  src: url("fonts/SpaceGrotesk-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal; font-weight: 700; font-display: swap;
+  src: url("fonts/SpaceGrotesk-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal; font-weight: 400; font-display: swap;
+  src: url("fonts/SpaceMono-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal; font-weight: 700; font-display: swap;
+  src: url("fonts/SpaceMono-700.woff2") format("woff2");
+}
+
 :root {
   --ink:        #0b0b0d;   /* off-black ground */
   --ink-2:      #131317;   /* raised panel */
@@ -124,16 +152,21 @@ a { color: inherit; }
 .hero {
   max-width: var(--maxw); margin-inline: auto;
   padding: clamp(2.5rem, 7vw, 5.5rem) var(--pad) clamp(2rem, 5vw, 3.5rem);
+  container-type: inline-size;
 }
 .hero__eyebrow {
   margin: 0 0 clamp(1rem, 3vw, 2rem);
   font-family: var(--f-mono); font-size: clamp(.72rem, 1.6vw, .9rem);
   text-transform: uppercase; letter-spacing: .12em; color: var(--accent);
 }
+/* Sized off the hero's content box, not the viewport: 16vw ignored the padding
+   and scrollbar, so "ENGINEER." ran ~10% past the container and the magenta dot
+   was clipped at every width below 1600. 1cqw = 1% of that content box, so the
+   longest line lands flush with the rule below it at every size. */
 .hero__title {
   margin: 0;
   font-family: var(--f-display);
-  font-size: clamp(2.6rem, 16vw, 15rem);
+  font-size: min(16.6cqw, 15rem);
   line-height: .82;
   letter-spacing: -.02em;
   text-transform: uppercase;
@@ -191,9 +224,11 @@ a { color: inherit; }
   align-self: start;
   padding-top: .35em;
 }
+/* floor is set by the longest unbreakable word ("PROFESSIONAL"): at a 2.6rem
+   floor it measures 349px and clips inside the ~310px available at 360w */
 .section__title {
   margin: 0; font-family: var(--f-display); text-transform: uppercase;
-  font-size: clamp(2.6rem, 9vw, 7rem); line-height: .9; letter-spacing: -.02em;
+  font-size: clamp(2rem, 9vw, 7rem); line-height: .9; letter-spacing: -.02em;
 }
 .section__note {
   grid-column: 2; margin: .6rem 0 0; max-width: 52ch;
@@ -233,9 +268,10 @@ a { color: inherit; }
   margin: 0 0 .8rem; font-size: .78rem; text-transform: uppercase;
   letter-spacing: .14em; color: var(--accent);
 }
+/* floor sized so the unbreakable "MECHACRAFT" clears the card at 320w */
 .feature__title {
   margin: 0 0 1rem; font-family: var(--f-display); text-transform: uppercase;
-  font-size: clamp(2.4rem, 5.5vw, 4.5rem); line-height: .9; letter-spacing: -.02em;
+  font-size: clamp(1.75rem, 5.5vw, 4.5rem); line-height: .9; letter-spacing: -.02em;
 }
 .feature__desc { margin: 0 0 1.6rem; max-width: 52ch; }
 
@@ -300,6 +336,11 @@ a { color: inherit; }
 .grid { display: grid; gap: var(--edge); }
 .grid--2 { grid-template-columns: repeat(2, 1fr); }
 .grid--3 { grid-template-columns: repeat(3, 1fr); }
+
+/* Grid items default to min-width:auto (= min-content). An image's max-width:100%
+   is a percentage and so doesn't constrain that intrinsic contribution, letting the
+   screenshots push their track past the viewport on narrow screens. */
+.grid > *, .feature > * { min-width: 0; }
 
 /* frame the grid so cells read as one brutalist block */
 .grid--2, .grid--3 { background: var(--line-hard); border: var(--edge) solid var(--line-hard); }
